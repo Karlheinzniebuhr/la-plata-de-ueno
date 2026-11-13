@@ -1,0 +1,27 @@
+name: Aportar una fuente
+description: Un documento o una nota pública que la página todavía no usa.
+title: "Fuente: "
+body:
+  - type: markdown
+    attributes:
+      value: "Solo fuentes públicas que cualquiera pueda comprobar. No incluyas datos personales de ahorristas, de empleados ni de sus familias, ni listas de personas sospechosas."
+  - type: input
+    id: enlace
+    attributes:
+      label: Enlace a la fuente pública
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: fecha
+    attributes:
+      label: Fecha del documento o de la nota
+    validations:
+      required: true
+  - type: textarea
+    id: aporta
+    attributes:
+      label: Qué aporta
+      description: Qué dato agrega o corrige, y dónde está dentro de la fuente.
+    validations:
+      required: true

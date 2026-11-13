@@ -1,0 +1,33 @@
+name: Reportar un error
+description: Un dato, una cifra o una fuente que está mal en la página.
+title: "Error: "
+body:
+  - type: markdown
+    attributes:
+      value: "Gracias por avisar. No incluyas datos personales de ahorristas, de empleados ni de sus familias."
+  - type: input
+    id: donde
+    attributes:
+      label: ¿Dónde está?
+      description: Sección de la página o nombre de la fila.
+    validations:
+      required: true
+  - type: textarea
+    id: dice
+    attributes:
+      label: Qué dice la página
+    validations:
+      required: true
+  - type: textarea
+    id: deberia
+    attributes:
+      label: Qué debería decir
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Enlace a la fuente pública
+      placeholder: https://
+    validations:
+      required: true
